@@ -1,0 +1,10 @@
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String
+  phoneNumber: AWSPhone
+  isVerified: Boolean
+  createdAt: AWSDateTime
+  email: AWSEmail
+  longitude: Float
+  latitude: Float
+}
